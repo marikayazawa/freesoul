@@ -288,4 +288,11 @@ Devise.setup do |config|
   #   include Turbolinks::Controller
   # end
   config.omniauth :twitter, "tt70JozE3C4RHRfxZNr9BkGgV", "Uu5xBr5SB8vmnU7shO9Kzrr7aJCthNah8hIzOvDupdzaQaapr1"
+# mail setting
+  config.mailer_sender = "jaska.snmroll@gmail.com"
+# lock sessings
+    config.unlock_strategy = :email
+    config.maximum_attempts = 4
+# timeout setting
+    config.timeout_in = 3.minutes
 end
